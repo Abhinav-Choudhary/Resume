@@ -1,0 +1,209 @@
+.contact {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3D5E8C;
+}
+
+.contact-dark {
+    background-color: #121212;
+}
+
+.contact-container {
+    width: 100%;
+
+    text-align: center;
+}
+
+.contact-heading {
+    color: #FFEF8B;
+}
+
+.contact-paragraph {
+    margin: 0.5rem;
+
+    color: white;
+    opacity: 87%;
+}
+
+.contact-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.5rem;
+    
+    line-height: 1;
+}
+
+.contact-social-list {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem;
+}
+
+.contact-social-list-dark {
+    opacity: 87%;
+}
+
+.contact-social-link {
+    text-decoration: none;
+}
+
+.linkedin-logo {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+
+    background-color: #0077b7;
+    color: white;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.twitter-logo,
+.instagram-logo,
+.github-logo {
+    color: #1d9bf0;
+}
+
+/* Below CSS adapted from https://css.gg under the MIT License.*/
+/* .gg-twitter */
+.gg-twitter {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-twitter::after,
+   .gg-twitter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 4px
+   }
+   
+   .gg-twitter::before {
+    width: 9px;
+    height: 14px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 6px;
+    background:
+    linear-gradient(
+    to left,currentColor 12px,transparent 0)
+    no-repeat center 2px/10px 4px;
+    top: 4px
+   }
+   
+   .gg-twitter::after {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 20px;
+    top: 2px;
+    box-shadow: 7px 4px 0,7px 12px 0
+   }
+
+/* .gg-instagram */
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+   .gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   }
+
+   /* .gg-git-fork */
+   .gg-git-fork {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 2px;
+    height: 14px;
+    background: currentColor
+   }
+   
+   .gg-git-fork::after,
+   .gg-git-fork::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-git-fork::before {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 4px;
+    bottom: 4px;
+    width: 8px;
+    height: 6px;
+    left: 0
+   }
+   
+   .gg-git-fork::after {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:0 12px 0 0,6px 2px 0 0;
+    border-radius: 100%;
+    left: -1px;
+    top: -1px
+   } 
+/* End of CSS adopted from https://css.gg under the MIT License */
+
+/* -----------
+-
+Media query block
+-
+------- */
+@media screen and (min-width: 44rem) {
+
+    .contact {
+        grid-column: span 5;
+
+        padding: 0.5rem;
+    }
+
+}

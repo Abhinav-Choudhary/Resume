@@ -1,0 +1,24 @@
+.contact-me {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.connect {
+    grid-column: span 12;
+
+    padding: 2rem;
+}
+
+/* -----------
+-
+Media query block
+-
+------- */
+
+@media screen and (min-width: 44rem) {
+
+    .connect {
+        grid-column: span 7;
+    }
+
+}

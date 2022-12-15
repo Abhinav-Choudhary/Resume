@@ -1,0 +1,54 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    background-color: #3D5E8C;
+}
+
+.footer-dark {
+    background-color: #121212;
+}
+
+.disclaimer-container {
+    grid-column: span 12;
+
+    text-align: center;
+}
+
+.disclaimer-heading {
+    color: #FFEF8B;
+}
+
+.disclaimer-paragraph {
+    text-align: left;
+
+    padding: 0 1rem 0 1rem;
+    
+    color: white;
+    opacity: 87%;
+}
+
+/* -----------
+-
+Media query block
+-
+------- */
+@media screen and (min-width: 44rem) {
+
+    .disclaimer-container {
+        grid-column: span 7;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        padding: 0.5rem;
+    }
+
+}

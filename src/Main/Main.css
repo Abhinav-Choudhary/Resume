@@ -1,0 +1,23 @@
+.main {
+    background-color: #E6DACE;
+}
+
+.main-dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.page-heading-dark {
+    color: #FFEF8B;
+    opacity: 87%;
+}
+
+.heading-dark {
+    color: white;
+    opacity: 87% !important;
+}
+
+.text-dark {
+    color: white;
+    opacity: 60% !important;
+}
