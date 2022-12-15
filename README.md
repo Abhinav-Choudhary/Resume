@@ -1,3 +1,7 @@
+# Introduction
+
+This project is an online resume meant to showcase my skills. This project is part of the course "INFO6150: Web Design/User Experience Engineering" offered by College of Engineering at Northeastern University, Boston. This is an ongoing project and will be updated in future as per skills learnt in upcoming sessions of the course and degree.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
