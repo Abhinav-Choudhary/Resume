@@ -8,7 +8,7 @@
     # GitHub repository where assets will be deployed (default $GITHUB_REPOSITORY)
     repo: # optional
     # Git branch where assets will be deployed
-    target_branch: # optional, default is gh-pages
+    target_branch: main # optional, default is gh-pages
     # Create incremental commit instead of doing push force
     keep_history: # optional, default is false
     # Allow an empty commit to be created
