@@ -17,11 +17,11 @@ const contacts = ContactData.map((contact) => {
               <li key={link.key} className={`contact-social-list ${isDarkMode ? "contact-social-list-dark" : ""}`}>
                   {
                     link.isIcon ? 
-                    (<a className="contact-social-link" href={link.href} target="_blank" aria-label={`Go to ${link.title} page`}>
+                    (<a className="contact-social-link" href={link.href} target="_blank" aria-label={`Go to ${link.title} page`} rel="noreferrer">
                       <i className={link.className} title={link.title}></i>
                     </a>)
                     :
-                    (<a className="contact-social-link" href={link.href} target="_blank" aria-label={`Go to ${link.title} page`}>
+                    (<a className="contact-social-link" href={link.href} target="_blank" aria-label={`Go to ${link.title} page`} rel="noreferrer">
                       <span className={link.className} title={link.title}>{link.text}</span>
                     </a>)
                   }
