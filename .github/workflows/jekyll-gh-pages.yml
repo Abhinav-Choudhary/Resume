@@ -24,15 +24,9 @@ jobs:
     
     - name: Install NPM packages
       run: npm install
-      
-    - name: audit fix
-      run: npm audit fix
     
     - name: Build project
       run: npm run build
-    
-    - name: Run tests
-      run: npm run test
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
