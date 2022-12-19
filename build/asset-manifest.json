@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Resume/static/css/main.0e8a64c7.css",
+    "main.js": "/Resume/static/js/main.3c5d1aa1.js",
+    "static/js/787.dc9ee2bf.chunk.js": "/Resume/static/js/787.dc9ee2bf.chunk.js",
+    "static/media/hydrationMonitoring.jpg": "/Resume/static/media/hydrationMonitoring.e2d0407556fc4dfa9757.jpg",
+    "static/media/JabalpurFalls.jpg": "/Resume/static/media/JabalpurFalls.3a6ec1a6500d1f8db49e.jpg",
+    "static/media/Jaipur.jpg": "/Resume/static/media/Jaipur.bebefdedeaaf2b58f52f.jpg",
+    "static/media/cropPrediction.jpg": "/Resume/static/media/cropPrediction.a2f12f2926b20e3182c0.jpg",
+    "static/media/Sunset.jpg": "/Resume/static/media/Sunset.3c3eb3e691fda1144b1d.jpg",
+    "static/media/shuriken.jpg": "/Resume/static/media/shuriken.16430e47696ba7bdec91.jpg",
+    "static/media/Kasauli.jpg": "/Resume/static/media/Kasauli.56bac6ccc1041bd47b8d.jpg",
+    "static/media/RishiKesh.jpg": "/Resume/static/media/RishiKesh.c6a0b4b42b15371ddba4.jpg",
+    "static/media/Manali.jpg": "/Resume/static/media/Manali.aee53796c9e6b63015f0.jpg",
+    "static/media/reflexarc.png": "/Resume/static/media/reflexarc.403e93b6a250106ac531.png",
+    "static/media/xboxController.jpg": "/Resume/static/media/xboxController.d197e77e01af502131ce.jpg",
+    "static/media/diwaliCandles.JPG": "/Resume/static/media/diwaliCandles.d6dfd0d5ed2b7f1c7f6c.JPG",
+    "static/media/Resume_AbhinavChoudhary.pdf": "/Resume/static/media/Resume_AbhinavChoudhary.5e9b164bd1bc5ca95138.pdf",
+    "static/media/schedulingAlgorithmsOutput.png": "/Resume/static/media/schedulingAlgorithmsOutput.130b3a0a8408cb0557a2.png",
+    "static/media/PassportPhoto.jpg": "/Resume/static/media/PassportPhoto.91faafe0db2bb800f0f9.jpg",
+    "index.html": "/Resume/index.html",
+    "main.0e8a64c7.css.map": "/Resume/static/css/main.0e8a64c7.css.map",
+    "main.3c5d1aa1.js.map": "/Resume/static/js/main.3c5d1aa1.js.map",
+    "787.dc9ee2bf.chunk.js.map": "/Resume/static/js/787.dc9ee2bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e8a64c7.css",
+    "static/js/main.3c5d1aa1.js"
+  ]
+}
