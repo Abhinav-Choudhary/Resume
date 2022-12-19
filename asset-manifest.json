@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Resume/static/css/main.0e8a64c7.css",
-    "main.js": "/Resume/static/js/main.3c5d1aa1.js",
+    "main.js": "/Resume/static/js/main.b26b2c8f.js",
     "static/js/787.dc9ee2bf.chunk.js": "/Resume/static/js/787.dc9ee2bf.chunk.js",
     "static/media/hydrationMonitoring.jpg": "/Resume/static/media/hydrationMonitoring.e2d0407556fc4dfa9757.jpg",
     "static/media/JabalpurFalls.jpg": "/Resume/static/media/JabalpurFalls.3a6ec1a6500d1f8db49e.jpg",
@@ -20,11 +20,11 @@
     "static/media/PassportPhoto.jpg": "/Resume/static/media/PassportPhoto.91faafe0db2bb800f0f9.jpg",
     "index.html": "/Resume/index.html",
     "main.0e8a64c7.css.map": "/Resume/static/css/main.0e8a64c7.css.map",
-    "main.3c5d1aa1.js.map": "/Resume/static/js/main.3c5d1aa1.js.map",
+    "main.b26b2c8f.js.map": "/Resume/static/js/main.b26b2c8f.js.map",
     "787.dc9ee2bf.chunk.js.map": "/Resume/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e8a64c7.css",
-    "static/js/main.3c5d1aa1.js"
+    "static/js/main.b26b2c8f.js"
   ]
 }
