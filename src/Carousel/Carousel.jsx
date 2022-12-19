@@ -59,7 +59,7 @@ function Carousel( { imagesList, isDarkMode } ) {
     return () => {
       resetTimer();
     };
-  }, [currentImageIndex]);
+  }, [currentImageIndex, imagesList.length]);
 
   return (
     <div className="carousel">

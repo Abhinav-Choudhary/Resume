@@ -27,7 +27,7 @@ function Header( { navigation, isDarkMode, toggleDarkMode } ) {
     <header className={`header ${isDarkMode ? "header-dark" : ""}`}>
         <a className="skiplink" href="#main">Skip to Content</a>
         <div className='header-container'>
-            <a href="/" className="logo-link" onClick={(event) => { navigation(event, "Home"); }}><img className="logo" src={Logo} alt="Passport photo of Abhinav Choudhary in white shirt with orange strips."/></a>
+            <a href="/" className="logo-link" onClick={(event) => { navigation(event, "Home"); }}><img className="logo" src={Logo} alt="Abhinav Choudhary in white shirt with orange strips."/></a>
             <div className='content'>
                 <h1 className="heading">ABHINAV CHOUDHARY</h1>
                 <nav className="navigation">
