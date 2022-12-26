@@ -1,20 +1,43 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Form.css';
 import { useState  } from 'react';
-import ContactData from '../Contact/ContactData';
+// import ContactData from '../Contact/ContactData';
+import { send } from '@emailjs/browser';
 
 function Form( { isDarkMode } ) {
 
+  const serviceId = "service_318cmar";
+  const templateID = "template_b9yuyjq";
+  const publicKey = "N8CFfANeuvpNjQNP7";
+
   const [formFields, setFormFields] = useState({
     name: "",
+    email: "",
     subject: "",
     message: ""
   });
 
-  const myEmail = ContactData[0]["email"];
+  const mailParams = {
+    name: formFields.name,
+    email: formFields.email,
+    subject: formFields.subject,
+    message: formFields.message
+  };
 
-  const mailtoContent = `mailto:${myEmail}?subject=${formFields.subject}&body=${formFields.name},%0D%0A${formFields.message}`;
-  const disableLink = !(formFields.name && formFields.subject && formFields.message);
+  function sendEmail() {
+    send(serviceId, templateID, mailParams, publicKey).then(
+      function(response) {
+        console.log(response.status, response.text);
+      }, function(error) {
+        console.log(error);
+      }
+    );
+  }
+
+  // const myEmail = ContactData[0]["email"];
+
+  // const mailtoContent = `mailto:${myEmail}?subject=${formFields.subject}&body=${formFields.name},%0D%0A${formFields.message}`;
+  const disableLink = !(formFields.name && formFields.email && formFields.subject && formFields.message);
 
   return (
     <div className={`form-container ${isDarkMode ? "form-container-dark" : ""}`}>
@@ -26,6 +49,14 @@ function Form( { isDarkMode } ) {
                   value={formFields.name} onChange={(event) => setFormFields({...formFields, name: event.target.value})} placeholder="Please enter your full name (Example: John Doe)."/>
                 </label>
                 <span className={`error ${formFields.name ? "hide-error" : ""}`}>*Name is a required field. Please provide your name in order to proceed.</span>
+              </div>
+              <div className="form-field-container">
+                <label className="form-label">
+                  <span className={`form-span required ${isDarkMode ? "heading-dark" : ""}`}>Email</span>
+                  <input className={`form-input ${formFields.email ? "" : "invalid"}`} name="email" type="text" 
+                  value={formFields.email} onChange={(event) => setFormFields({...formFields, email: event.target.value})} placeholder="Please enter the email from which you wish to send the message."/>
+                </label>
+                <span className={`error ${formFields.email ? "hide-error" : ""}`}>*Email is a required field. Please provide 'From' email in order to proceed.</span>
               </div>
               <div className="form-field-container">
                 <label className="form-label">
@@ -43,7 +74,8 @@ function Form( { isDarkMode } ) {
                 </label>
                 <span className={`error ${formFields.message ? "hide-error" : ""}`}>*Message is a required field. Please provide the message in order to proceed.</span>
               </div>
-              <a className={`form-button ${disableLink ? "disable-link" : ""}`} href={disableLink ? null : mailtoContent} aria-label="Submit form">Submit</a>
+              <a className={`form-button ${disableLink ? "disable-link" : ""}`}  onClick={disableLink ? null : sendEmail()} aria-label="Submit form">Submit</a>
+              {/* href={disableLink ? null : mailtoContent} */}
             </form>
       </div>
   );
