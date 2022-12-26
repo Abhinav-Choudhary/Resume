@@ -7,6 +7,7 @@ function Form( { isDarkMode } ) {
 
   const [formFields, setFormFields] = useState({
     name: "",
+    email: "",
     subject: "",
     message: ""
   });
@@ -26,6 +27,14 @@ function Form( { isDarkMode } ) {
                   value={formFields.name} onChange={(event) => setFormFields({...formFields, name: event.target.value})} placeholder="Please enter your full name (Example: John Doe)."/>
                 </label>
                 <span className={`error ${formFields.name ? "hide-error" : ""}`}>*Name is a required field. Please provide your name in order to proceed.</span>
+              </div>
+              <div className="form-field-container">
+                <label className="form-label">
+                  <span className={`form-span required ${isDarkMode ? "heading-dark" : ""}`}>Email</span>
+                  <input className={`form-input ${formFields.email ? "" : "invalid"}`} name="email" type="email" 
+                  value={formFields.email} onChange={(event) => setFormFields({...formFields, email: event.target.value})} placeholder="Please enter the email from which mail is to be sent (i.e. From Email)."/>
+                </label>
+                <span className={`error ${formFields.email ? "hide-error" : ""}`}>*Email is a required field. Please provide the email in order to proceed.</span>
               </div>
               <div className="form-field-container">
                 <label className="form-label">
