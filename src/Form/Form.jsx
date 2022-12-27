@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Form.css';
 import { useState  } from 'react';
-import ContactData from '../Contact/ContactData';
+// import ContactData from '../Contact/ContactData';
 
 function Form( { isDarkMode } ) {
+
+  const sgMail = require('@sendgrid/mail');
+  sgMail.setApiKey('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');
 
   const [formFields, setFormFields] = useState({
     name: "",
@@ -12,10 +15,44 @@ function Form( { isDarkMode } ) {
     message: ""
   });
 
-  const myEmail = ContactData[0]["email"];
+  // const myEmail = ContactData[0]["email"];
 
-  const mailtoContent = `mailto:${myEmail}?subject=${formFields.subject}&body=${formFields.name},%0D%0A${formFields.message}`;
-  const disableLink = !(formFields.name && formFields.subject && formFields.message);
+  // const mailtoContent = `mailto:${myEmail}?subject=${formFields.subject}&body=${formFields.name},%0D%0A${formFields.message}`;
+  const disableLink = !(formFields.name && formFields.email && formFields.subject && formFields.message);
+
+  function sendMail() {
+    const msg = {
+      to: 'abhinav.choudhary1106@gmail.com',
+      from: formFields.email,
+      subject: formFields.subject,
+      text: 'and easy to do anywhere, even with Node.js',
+      html: `<p>Hi, My name is ${formFields.name},</p><p>${formFields.message}</p>`,
+    };
+
+    // (async () => {
+    //   try {
+    //     await sgMail.send(msg);
+    //   } catch (error) {
+    //     console.error(error);
+    
+    //     if (error.response) {
+    //       console.error(error.response.body)
+    //     }
+    //   }
+    // })();
+
+  sgMail
+  .send(msg)
+  .then((response) => {
+    console.log(response);
+  }, (error) => {
+    console.error(error);
+
+    if (error.response) {
+      console.error(error.response.body)
+    }
+  });
+  }
 
   return (
     <div className={`form-container ${isDarkMode ? "form-container-dark" : ""}`}>
@@ -52,7 +89,8 @@ function Form( { isDarkMode } ) {
                 </label>
                 <span className={`error ${formFields.message ? "hide-error" : ""}`}>*Message is a required field. Please provide the message in order to proceed.</span>
               </div>
-              <a className={`form-button ${disableLink ? "disable-link" : ""}`} href={disableLink ? null : mailtoContent} aria-label="Submit form">Submit</a>
+              {/* <a className={`form-button ${disableLink ? "disable-link" : ""}`} href={disableLink ? null : mailtoContent} aria-label="Submit form">Submit</a> */}
+              <button className={`form-button ${disableLink ? "disable-link" : ""}`} onClick={sendMail()} aria-label="Submit form">Submit</button>
             </form>
       </div>
   );
