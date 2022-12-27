@@ -6,7 +6,7 @@ import { useState  } from 'react';
 function Form( { isDarkMode } ) {
 
   const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey('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');
+  sgMail.setApiKey('');
 
   const [formFields, setFormFields] = useState({
     name: "",
