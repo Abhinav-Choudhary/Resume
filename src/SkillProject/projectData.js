@@ -2,8 +2,28 @@ import cropPrediction from "../images/cropPrediction.jpg";
 import schedulingAlgorithm from "../images/schedulingAlgorithmsOutput.png";
 import hydrationMonitoring from "../images/hydrationMonitoring.jpg";
 import reflexArc from "../images/reflexarc.png";
+import wifiStrength from "../images/wifiStrength.png";
+import resume from "../images/resume.png";
 
 const projectData = [
+    {
+        key: "wifiSignalStrength",
+        title: "Wifi Signal Strength Mapping",
+        imageSrc: wifiStrength,
+        imageAlt: "Image of a floor plan with depiction of wifi signals.",
+        briefDescription: "A project that aims to provide the most optimal spot for the wifi router inside the house. Uses various parameters like frequency, refractive index of the material, a floor plan, etc. Is built using a combination of Java and JavaFX with calculations in C++.",
+        href: "https://github.com/Abhinav-Choudhary/Wifi-Signal-Strength-Mapping",
+        linkTitle: "Github Repository"
+    },
+    {
+        key: "resume",
+        title: "Resume",
+        imageSrc: resume,
+        imageAlt: "Screenshot of the resume website.",
+        briefDescription: "The very website you are browsing. It is a project built on react and is meant to be an ever growing showcase of various skills learnt over the years.",
+        href: "https://github.com/Abhinav-Choudhary/Resume",
+        linkTitle: "Github Repository"
+    },
     {
         key: "cropPrediction",
         title: "Crop Prediction Analysis",

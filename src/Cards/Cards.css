@@ -81,7 +81,7 @@ Media query block
 
 @media screen and (min-width: 44rem) {
   .cards {
-      grid-column: span 3;
+      grid-column: span 4;
   }
 
 }
