@@ -11,12 +11,11 @@ const workData = [
                 key: "productDevelopment",
                 heading: "Product Development - Client Side (Capital Edge)",
                 items: [
-                    "Worked on product developed by EY for use in merger and acquisitions. The product helps clients keep track of activities from Day 1 to completion of transaction life cycle.",
-                    "Responsible for modifying the product according to project and client needs. Worked on technologies/programming languages like Angular, SharePoint, SQL Server, .Net, etc.",
-                    "Was a vital resource in migration of 3 client projects from old SharePoint platform to new Azure platform. Worked on every aspect from development, management to post deployment requirements. Even acting as leadership and management roles during certain points of the migration process.",
-                    "Wrote various SQL triggers and stored procedures to meet client needs.",
-                    "Updated API's written in C# (.Net) and workflows writter in NodeJs as per client demands.",
-                    "Worked on Azure repositories, used Git commands, created branches, pipelines, releases, etc."
+                    "Assisted in growth and expansion of Capital Edge and was assigned to 3 client projects within the United States region, working on technologies like Angular, SQL Server, C#, Azure",
+                    "Led migration of 3 client projects from an outdated SharePoint platform to a new Azure platform, participating in every stage from design to implementation to post-deployment",
+                    "Managed projects for a period of 6 months due to a shortage of resources and was subsequently given expanded duties, ranging from Angular development to overseeing projects and even taking on tasks in NodeJS and C#",
+                    "Supervised a team of 5 individuals, comprising both new hires and those involved in reporting and quality assurance, due to extensive knowledge and experience with the project",
+                    "Created SQL Triggers for more than 10 tables, impacting both primary and foreign tables, and improved APIs written in C# (.Net) to enhance overall performance and customize product to meet specific client requirements"
                 ]
             }
         ]
@@ -52,16 +51,10 @@ const workData = [
                 key: "internalSites",
                 heading: "Internal Sites",
                 items: [
-                    "Worked on Angular 6+ and Angular Js to develop various one page web applications from scratch hosted on SharePoint, intended for internal use.",
-                    "Sites ranged from informative websites used to showcase various products and services to collaborative websites where various users posted their ideas along with prototypes and documentation which was evaluated by management and later incorporated in the organization.",
+                    "Designed a comprehensive website using Angular JS and SharePoint for EY teams located in Germany to demonstrate various offerings and strategies of EY and support sales pitch for different services to clients",
+                    "Created a collaboration website alongside a senior developer acting as a platform for sharing ideas, designs, business scenarios, workflows, etc. which can be utilized to enhance EY business or optimize existing workflows",
+                    "Completed configuration tasks for client projects situated in 2 distinct regions",
                     "Created custom media and content web parts on SharePoint using HTML, JavaScript, CSS to solve the needs of various users."
-                ]
-            },
-            {
-                key: "productClientSide",
-                heading: "Product - Client side",
-                items: [
-                    "Worked on configuration changes on client product offered by EY."
                 ]
             }
         ]
