@@ -1,7 +1,9 @@
-import './App.css';
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
+// import './App.css';
+// import Header from './Header/Header';
+// import Main from './Main/Main';
+// import Footer from './Footer/Footer';
+import './Css/main-app.css'
+import Sidebar from './SideBar/Sidebar';
 import { useState } from "react";
 
 function App() {
@@ -19,9 +21,10 @@ function App() {
 
    return (
     <div className={`app ${isDarkMode ? "dark-mode" : ""}`}>
-      <Header navigation={navigation} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Sidebar navigation={navigation} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      {/* <Header navigation={navigation} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Main currentPage={currentPage} isDarkMode={isDarkMode}/>
-      <Footer isDarkMode={isDarkMode}/>
+      <Footer isDarkMode={isDarkMode}/> */}
     </div>
   );
 }
