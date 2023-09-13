@@ -1,0 +1,349 @@
+ul {
+    list-style: none;
+}
+
+.skiplink {
+    position: absolute;
+    left: -100%;
+
+    color: white;
+  }
+  
+  .skiplink:focus {
+    left: 50%;
+  }
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    background-color: #3D5E8C;
+}
+
+.header-dark {
+    background-color: #121212;
+}
+
+.header-container {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.logo-link {
+    grid-column: span 3;
+}
+
+.logo {
+    grid-column: span 12;
+    
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.content {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.heading {
+    display: flex;
+    grid-column: span 11;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+
+    height: 100%;
+    padding: 1rem;
+
+    color: #FFEF8B;
+}
+
+.navigation {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu-icon {
+    margin-right: 0.5rem;
+
+    cursor: pointer;
+}
+
+.header-sub-menu {
+    position: absolute;
+    top: 7.25rem;
+    right: 0;
+
+    padding: 0;
+
+    line-height: 2;
+    background-color: #335078;
+    z-index: 1;
+}
+
+.header-sub-menu-dark {
+    background-color: #222222;
+}
+
+.sub-menu-item {
+    padding: 0 0.5rem;
+}
+
+.sub-menu-link {
+    color: #FFEF8B;
+    text-decoration: none;
+}
+
+.sub-menu-link-dark {
+    opacity: 87%;
+}
+
+/* Below CSS adapted from https://css.gg under the MIT License.*/
+/* css.gg menu */
+.gg-menu {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+    color: #F9F871;
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+}
+.gg-menu::after {
+    top: 6px
+}
+
+/* css.gg moon */
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    overflow: hidden;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent;
+    color: white;
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+
+/* css.gg sun */
+.gg-sun {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.35rem;
+    left: 3.5rem;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 24px;
+    background:
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+    color: #a4a322;
+}
+   
+.gg-sun::after,
+.gg-sun::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px
+}
+   
+.gg-sun::before {
+    transform: rotate(-45deg)
+}
+   
+.gg-sun::after {
+    transform: rotate(45deg)
+}
+/* End of CSS adopted from https://css.gg under the MIT License */
+
+/* -----------
+-
+Media query block
+-
+------- */
+@media screen and (min-width: 55rem) {
+    
+    .logo-link {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .logo {
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .content {
+        grid-column: span 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .heading {
+        grid-column: span 10;
+    }
+
+    .navigation {
+        grid-column: span 12;
+        display: block;
+    }
+
+    .header-menu-icon {
+        display: none;
+    }
+
+    .header-sub-menu {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 25rem) {
+    .theme-toggle {
+        right: 1rem !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 55rem) {
+
+    .header-sub-menu {
+        transform: rotateX(90deg);
+        transform-origin: top;
+        transition: transform 1s;
+
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .header-sub-menu-open {
+        transform: rotateX(0deg);
+    }
+
+    .header-menu-icon {
+        transform: rotate(0deg);
+        transition: transform 1s;
+    }
+
+    .header-menu-icon-open {
+        transform: rotate(90deg);
+    }
+
+    .disable-sub-menu-link {
+        display: none;
+    }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .theme-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+    
+    .toggle {
+        position : relative ;
+        display : inline-block;
+    
+        width : 5rem;
+        height : 2rem;
+        border-radius: 2rem;
+        border: 2px solid #FFEF8B;
+    
+        background-color: #FFEF8B;
+    }
+    
+    .toggle:after {
+        content: '';
+        position: absolute;
+    
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border-color: white;
+    
+        background-color: white;
+    
+        transition:  all 0.5s;
+    }
+    
+    .darkMode:checked + .toggle::after {
+        left : 3rem;
+    
+        background-color: #a4a322;
+    }
+    
+    .darkMode:checked + .toggle {
+        background-color: black;
+    }
+    
+    .darkMode {
+        display : none;
+    }
+}

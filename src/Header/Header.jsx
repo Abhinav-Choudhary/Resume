@@ -1,13 +1,13 @@
 import './Header.css';
 import {useState} from 'react';
-import headerData from './HeaderData';
-import Logo from "./../images/PassportPhoto.jpg";
+import {headerData, socialLinks} from './HeaderData';
+// import Logo from "./../images/PassportPhoto.jpg";
 
 function Header( { navigation, isDarkMode, toggleDarkMode } ) {
     const [menuOpen, setMenuOpen] = useState(false);
     const [disabledLink, setDisabledLink] = useState(true);
-    const subMenuOpen = menuOpen ? "header-sub-menu-open" : "";
-    const rotateMenuIcon = menuOpen ? "header-menu-icon-open" : "";
+    // const subMenuOpen = menuOpen ? "header-sub-menu-open" : "";
+    // const rotateMenuIcon = menuOpen ? "header-menu-icon-open" : "";
     const isLinkDisabled = disabledLink ? "disable-sub-menu-link" : "";
 
     function updateMenuState() {
@@ -16,37 +16,33 @@ function Header( { navigation, isDarkMode, toggleDarkMode } ) {
     }
 
     const navigationLinks = headerData.map((nav) => 
-            <li className="sub-menu-item" key={nav.key}>
-                <a className={`sub-menu-link ${isDarkMode ? "sub-menu-link-dark" : ""} ${isLinkDisabled}`} href={nav.href} onClick={(event) => { navigation(event, nav.navigation); updateMenuState();}}>
+            <li className="navigation-sub-menu" key={nav.key}>
+                <a className={`navigation-sub-menu-link ${isDarkMode ? "sub-menu-link-dark" : ""} ${isLinkDisabled}`} href={nav.href} onClick={(event) => { navigation(event, nav.navigation); updateMenuState();}}>
                     {nav.title}
                 </a>
             </li>
     );
 
+    const socialMediaLinks = socialLinks.map((social) =>
+        <a href={social.href} className="social-media-links" key={social.key}>
+            <i className={social.logo} aria-hidden="true" title={social.title}></i>
+        </a>
+    );
+
     return (
     <header className={`header ${isDarkMode ? "header-dark" : ""}`}>
-        <a className="skiplink" href="#main">Skip to Content</a>
-        <div className='header-container'>
-            <a href="/" className="logo-link" onClick={(event) => { navigation(event, "Home"); }}><img className="logo" src={Logo} alt="Abhinav Choudhary in white shirt with orange strips."/></a>
-            <div className='content'>
-                <h1 className="heading">ABHINAV CHOUDHARY</h1>
-                <nav className="navigation">
-                    <ul className="header-menu">
-                        <li>
-                            <i className={`gg-menu header-menu-icon ${rotateMenuIcon}`} aria-label="Menu" onClick={updateMenuState}></i>
-                            <ul className={`header-sub-menu ${isDarkMode ? "header-sub-menu-dark" : ""} ${subMenuOpen}`}>
-                                { navigationLinks }
-                            </ul>
-                        </li>
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+            <h1 className="logo me-auto me-lg-0"><a href="/" className="logo-link" onClick={(event) => { navigation(event, "HomeAbout"); }}>Abhinav Choudhary</a></h1>
+            <nav className="navigation navbar order-last order-lg-0">
+                    <ul className="navigation-menu">
+                    { navigationLinks }
                     </ul>
-                </nav>
-            </div>
+                    <i className="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <div className="header-social">
+                {socialMediaLinks}
+      </div>
         </div>
-        <div className='theme-toggle'>
-            <input type="checkbox" className='darkMode' aria-label="dark mode toggle" id="darkMode" checked={isDarkMode} onChange={(event) => toggleDarkMode(event)}/>
-            <label className='toggle' htmlFor="darkMode"></label> 
-            <i className='gg-moon'></i> <i className='gg-sun'></i>  
-        </div>  
     </header>
     );
 }

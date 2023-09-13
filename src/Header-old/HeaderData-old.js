@@ -1,4 +1,4 @@
-export const headerData = [
+const headerData = [
     {
         key: "HomeAbout",
         title: "Home & About",
@@ -31,25 +31,4 @@ export const headerData = [
     }
 ];
 
-export const socialLinks = [
-    {
-        key: "LinkedIn",
-        title: "LinkedIn",
-        href: "/",
-        logo: "fa fa-linkedin"
-    },
-    {
-        key: "Github",
-        title: "Github",
-        href: "/",
-        logo: "fa fa-github"
-    },
-    {
-        key: "Email",
-        title: "Email",
-        href: "/",
-        logo: "fa fa-envelope"
-    }
-];
-
-// export default { headerData, socialLinks };
+export default headerData;
