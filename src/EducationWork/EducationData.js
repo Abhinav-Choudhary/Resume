@@ -5,9 +5,11 @@ const educationData = [
         subHeading: "Masters in Software Engineering Systems",
         content: [
             "Northeastern University, Boston",
-            `Relevant Coursework: Concepts of Object Oriented Design, Program Structures and Algorithms, Web Design & User
-            Experience Engineering, and User Experience Design & Testing.`,
-            "GPA: N/A"
+            `Relevant Coursework: Enterprise Software Engineering, Network Structures and Cloud Computing, Advanced Big Data App/Indexing, 
+            Concepts of Object Oriented Design, Program Structures and Algorithms, Web Design & User
+            Experience Engineering, User Experience Design & Testing, and
+            Data Management and Database Design`,
+            "GPA: 3.77"
         ],
         dateRange: "Sep 2022 - May 2024",
         isRoundTop: true,
