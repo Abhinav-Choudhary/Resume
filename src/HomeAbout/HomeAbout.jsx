@@ -1,5 +1,5 @@
 import './HomeAbout.css';
-import resume from "./../Resume_AbhinavChoudhary.pdf";
+import resume from "./../AbhinavChoudhary_SoftwareEngineer.pdf";
 import homeAboutData from './HomeAboutData';
 
 function HomeAbout( { isDarkMode } ) {
