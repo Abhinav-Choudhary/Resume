@@ -1,33 +1,45 @@
 export const headerData = [
     {
-        key: "HomeAbout",
-        title: "Home & About",
+        key: "Home",
+        title: "Home",
         href: "/",
-        navigation: "HomeAbout"
+        navigation: "Home"
     },
     {
-        key: "EducationWork",
-        title: "Education & Work Experience",
+        key: "About",
+        title: "About",
+        href: "/",
+        navigation: "About"
+    },
+    {
+        key: "Education",
+        title: "Education",
         href: "/EducationWork.html",
-        navigation: "EducationWork"
+        navigation: "Education"
     },
     {
-        key: "SkillProject",
-        title: "Skills & Projects",
+        key: "Work",
+        title: "Work Experience",
+        href: "/EducationWork.html",
+        navigation: "Work"
+    },
+    {
+        key: "Skill",
+        title: "Skills",
         href: "/SkillProject.html",
-        navigation: "SkillProject"
+        navigation: "Skill"
     },
     {
-        key: "HobbyInterest",
-        title: "Hobbies & Interests",
-        href: "/HobbyInterest.html",
-        navigation: "HobbyInterest"
+        key: "Projects",
+        title: "Projects",
+        href: "/Projects.html",
+        navigation: "Projects"
     },
     {
-        key: "ContactMe",
-        title: "Contact Me",
+        key: "Contact",
+        title: "Contact",
         href: "/ContactMe.html",
-        navigation: "ContactMe"
+        navigation: "Contact"
     }
 ];
 
