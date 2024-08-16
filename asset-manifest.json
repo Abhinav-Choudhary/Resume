@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Resume/static/css/main.14e0762d.css",
-    "main.js": "/Resume/static/js/main.4a97f6a6.js",
-    "static/js/592.451cf9ed.chunk.js": "/Resume/static/js/592.451cf9ed.chunk.js",
+    "main.js": "/Resume/static/js/main.e89cd271.js",
+    "static/js/453.f19e9853.chunk.js": "/Resume/static/js/453.f19e9853.chunk.js",
     "static/media/hydrationMonitoring.jpg": "/Resume/static/media/hydrationMonitoring.e2d0407556fc4dfa9757.jpg",
     "static/media/JabalpurFalls.jpg": "/Resume/static/media/JabalpurFalls.3a6ec1a6500d1f8db49e.jpg",
     "static/media/Jaipur.jpg": "/Resume/static/media/Jaipur.bebefdedeaaf2b58f52f.jpg",
@@ -16,17 +16,17 @@
     "static/media/xboxController.jpg": "/Resume/static/media/xboxController.d197e77e01af502131ce.jpg",
     "static/media/diwaliCandles.JPG": "/Resume/static/media/diwaliCandles.d6dfd0d5ed2b7f1c7f6c.JPG",
     "static/media/resume.png": "/Resume/static/media/resume.163837ce60a2cd2cc556.png",
+    "static/media/AbhinavChoudhary_Resume.pdf": "/Resume/static/media/AbhinavChoudhary_Resume.a0e1225363363bac11e1.pdf",
     "static/media/wifiStrength.png": "/Resume/static/media/wifiStrength.38bee88bc3803f12217d.png",
-    "static/media/AbhinavChoudhary_SoftwareEngineer.pdf": "/Resume/static/media/AbhinavChoudhary_SoftwareEngineer.d8d4142b51d86fa76423.pdf",
     "static/media/schedulingAlgorithmsOutput.png": "/Resume/static/media/schedulingAlgorithmsOutput.130b3a0a8408cb0557a2.png",
     "static/media/PassportPhoto.jpg": "/Resume/static/media/PassportPhoto.91faafe0db2bb800f0f9.jpg",
     "index.html": "/Resume/index.html",
     "main.14e0762d.css.map": "/Resume/static/css/main.14e0762d.css.map",
-    "main.4a97f6a6.js.map": "/Resume/static/js/main.4a97f6a6.js.map",
-    "592.451cf9ed.chunk.js.map": "/Resume/static/js/592.451cf9ed.chunk.js.map"
+    "main.e89cd271.js.map": "/Resume/static/js/main.e89cd271.js.map",
+    "453.f19e9853.chunk.js.map": "/Resume/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14e0762d.css",
-    "static/js/main.4a97f6a6.js"
+    "static/js/main.e89cd271.js"
   ]
 }
