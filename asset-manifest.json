@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.05811f94.css",
-    "main.js": "/Resume/static/js/main.b3b59b5c.js",
-    "static/js/787.dc9ee2bf.chunk.js": "/Resume/static/js/787.dc9ee2bf.chunk.js",
+    "main.css": "/Resume/static/css/main.14e0762d.css",
+    "main.js": "/Resume/static/js/main.b19df724.js",
+    "static/js/453.b0994b62.chunk.js": "/Resume/static/js/453.b0994b62.chunk.js",
     "static/media/hydrationMonitoring.jpg": "/Resume/static/media/hydrationMonitoring.e2d0407556fc4dfa9757.jpg",
     "static/media/JabalpurFalls.jpg": "/Resume/static/media/JabalpurFalls.3a6ec1a6500d1f8db49e.jpg",
     "static/media/Jaipur.jpg": "/Resume/static/media/Jaipur.bebefdedeaaf2b58f52f.jpg",
@@ -21,12 +21,12 @@
     "static/media/schedulingAlgorithmsOutput.png": "/Resume/static/media/schedulingAlgorithmsOutput.130b3a0a8408cb0557a2.png",
     "static/media/PassportPhoto.jpg": "/Resume/static/media/PassportPhoto.91faafe0db2bb800f0f9.jpg",
     "index.html": "/Resume/index.html",
-    "main.05811f94.css.map": "/Resume/static/css/main.05811f94.css.map",
-    "main.b3b59b5c.js.map": "/Resume/static/js/main.b3b59b5c.js.map",
-    "787.dc9ee2bf.chunk.js.map": "/Resume/static/js/787.dc9ee2bf.chunk.js.map"
+    "main.14e0762d.css.map": "/Resume/static/css/main.14e0762d.css.map",
+    "main.b19df724.js.map": "/Resume/static/js/main.b19df724.js.map",
+    "453.b0994b62.chunk.js.map": "/Resume/static/js/453.b0994b62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05811f94.css",
-    "static/js/main.b3b59b5c.js"
+    "static/css/main.14e0762d.css",
+    "static/js/main.b19df724.js"
   ]
 }
